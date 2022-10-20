@@ -42,7 +42,7 @@ const OnboardingScreen = ({setFirstLaunch}) =>{
         pages={[
             {
               backgroundColor: '#fff',
-              image: <Image   style={{height: '60%', width: '90%', resizeMode:'contain', marginBottom:-200}} source={require('../image/testing.png')} />,
+              image: <Image   style={{height:`` '60%', width: '90%', resizeMode:'contain', marginBottom:-200}} source={require('../image/testing.png')} />,
               title: <Text style={{fontWeight:'bold', textAlign:'center', color:'#A0CE4E', fontSize:19, margin:12,  marginTop: -70}}>Welcome to STEDI  Balance</Text>,
               subtitle: 'STEDI Balance will now send a text with a code',
             },
