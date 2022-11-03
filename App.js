@@ -1,10 +1,11 @@
 import React, { useEffect, useState, } from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity, AsyncStorage, TextInput, Buttton} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Buttton} from 'react-native';
 import  Navigation from './components/Navigation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import OnboardingScreen from './screens/OnboardingScreen';
 import Home from './screens/Home';
 import { NavigationContainer } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
@@ -44,25 +45,24 @@ return(
 }
  export default App;
 
- const styles = StyleSheet.create({
-  container:{
-      flex:1, 
-      alignItems:'center',
-      justifyContent: 'center'
-  },
-  input: {
-    height: 40,
-    marginTop:100,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  margin:{
-    marginTop:100
-  },
-  button: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    padding: 10
-  }    
+const styles = StyleSheet.create({
+    container:{
+        flex:1, 
+        alignItems:'center',
+        justifyContent: 'center'
+    },
+    input: {
+      height: 40,
+      margin: 12,
+      borderWidth: 1,
+      padding: 10,
+    },
+    margin:{
+      marginTop:100
+    },
+    button: {
+      alignItems: "center",
+      backgroundColor: "#DDDDDD",
+      padding: 10
+    }    
 })
